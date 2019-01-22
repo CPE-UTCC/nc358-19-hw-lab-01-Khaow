@@ -1,3 +1,44 @@
 Assignment #1 (due 25/01/2019)
+
 1. Shell ใน Linux มีอะไรบ้าง จงอธิบายมาอย่างน้อย 3 ชนิด
+
+ตัวอย่าง Shell มี่นิยมใช้เขียน Shell script
+
+1.1 Bournr shell (/bin/sh) เป็น shell ในยุคแรกๆ ที่มีใช้กันอย่างแพร่หลาย มีการกำหนดโครงสร้างภาษาคล้ายๆ กับภาษาอัลกอ (Algo) 
+สามารถเขียน shell script ได้ และยังเป็น starndard shell ที่มีใน UNIX ทุกตัว และยังสามารถย้าย shell script ไปยัง UNIX ระบบอื่นโดยไม่ต้องแก้ไขอะไรได้อีกด้วย 
+จะมี default prompt เป็นเครื่องหมาย “ $ ”
+
+1.2 C shell (/bin/csh) เป็น shell ที่พัฒนาขึ้นมาหลังจาก Bourne shell มีรูปแบบคำสั่งและไวยากรณ์เหมือนกับภาษา C มี function การทำงานหลายที่ดีและอย่างสะดวก 
+อีกทั้งยังสามารถควบคุมการไหลของข้อมูลได้ดีกว่า Bourne shell และยังมีความสามารถในการเรียกใช้คำสั่งที่ใช้ไปแล้ว จะมี default prompt เป็นเครื่องหมาย “ % ”
+
+1.3 Korn shell (/bin/ksh) เป็น shell ที่พัฒนามาจาดต้นแบบของ Bourne shell และ C shell สามารถทำงานใน function ของ Bourne shell ได้ทุกอย่าง 
+การเขียน shell script ทำได้ง่ายและรัดกุมขึ้น  สามารถนำคำสั่งที่ใช้ไปแล้วกลับมา execute ไปใหม่ได้  
+ถือได้ว่า Korn shell เป็นการรวมเอาข้อดีของ Bourne shell  และ C shell มาไว้ด้วยกัน แต่ไม่ได้มีใน UNIX ทุกตัว จะมี default prompt เป็นเครื่องหมาย “ $ ”
+
+1.4 Bournr again shell (/bin/bash หรือ /usr/local/bin/bash) เป็นการเอา Bournr shell นำกลับมาพัฒนาใหม่ 
+สามารถทำงานแบบ line editing ได้ และยังได้เพิ่มประสิทธิภาพในการทำงานอีกหลายอย่าง bash shell นี้ไม่ใช่ standard UNIX shell แต่เป็น default shell ของ linux 
+ในปัจจุบัน จะมี default prompt เป็นเครื่องหมาย “ $ ”
+
 2. การเปลี่ยนกลับมายัง Home Directory ทำได้อย่างไร จงแสดงคำสั่งที่ใช้พร้อมคำอธิบาย
+
+ตัวอย่างคำสั่ง เป็นคำสั่งที่เปลี่ยนไดเร็คทอรี่ ย้อนกลับมาหรือระบุตำแหน่ง
+
+2.1   cd   (ธรรมดา เป็นวิธีย้อนกลับไป Home Directory ไม่ว่าตอนนี้จะอยู่ที่ไดเร็คทอรี่ใดก็ตาม) cd แบบปกติ
+1.  $ pwd
+2.  /home/LabUBUNTU/Documents/Lab01
+3.  $ cd
+5.  /home/LabUBUNTU
+
+2.2   cd /etc   (cd /ตำแหน่งไดเร็คทอรี่ที่ต้องการไป) cd แบบ Absolute path
+1.  $ pwd
+2.  /home/LabUBUNTU/Documents/Lab01
+3.  $ cd /home/LabUBUNTU
+5.  /home/LabUBUNTU
+
+2.3   cd ..   (cdเว้นวรรคตามด้วย..  เป็นวิธีย้อนกลับไปไดเร็คทอรี่ก่อนหน้านี้1ระดับ) cd แบบ Relative path
+1.  $ pwd
+2.  /home/LabUBUNTU/Documents/Lab01
+3.  $ cd ..
+4.  $ pwd
+5.  /home/LabUBUNTU/Documents
+
