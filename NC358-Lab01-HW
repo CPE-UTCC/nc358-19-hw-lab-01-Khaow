@@ -4,7 +4,7 @@ Assignment #1 (due 25/01/2019)
 
 **ตัวอย่าง Shell มี่นิยมใช้เขียน Shell script**
 
-1.1 Bournr shell (/bin/sh) เป็น shell ในยุคแรกๆ ที่มีใช้กันอย่างแพร่หลาย มีการกำหนดโครงสร้างภาษาคล้ายๆ กับภาษาอัลกอ (Algo) 
+1.1 Bourne shell (/bin/sh) เป็น shell ในยุคแรกๆ ที่มีใช้กันอย่างแพร่หลาย มีการกำหนดโครงสร้างภาษาคล้ายๆ กับภาษาอัลกอ (Algo) 
 สามารถเขียน shell script ได้ และยังเป็น starndard shell ที่มีใน UNIX ทุกตัว และยังสามารถย้าย shell script ไปยัง UNIX ระบบอื่นโดยไม่ต้องแก้ไขอะไรได้อีกด้วย 
 จะมี default prompt เป็นเครื่องหมาย “ $ ”
 
@@ -15,7 +15,7 @@ Assignment #1 (due 25/01/2019)
 การเขียน shell script ทำได้ง่ายและรัดกุมขึ้น  สามารถนำคำสั่งที่ใช้ไปแล้วกลับมา execute ไปใหม่ได้  
 ถือได้ว่า Korn shell เป็นการรวมเอาข้อดีของ Bourne shell  และ C shell มาไว้ด้วยกัน แต่ไม่ได้มีใน UNIX ทุกตัว จะมี default prompt เป็นเครื่องหมาย “ $ ”
 
-1.4 Bournr again shell (/bin/bash หรือ /usr/local/bin/bash) เป็นการเอา Bournr shell นำกลับมาพัฒนาใหม่ 
+1.4 Bourne again shell (/bin/bash หรือ /usr/local/bin/bash) เป็นการเอา Bourne shell นำกลับมาพัฒนาใหม่ 
 สามารถทำงานแบบ line editing ได้ และยังได้เพิ่มประสิทธิภาพในการทำงานอีกหลายอย่าง bash shell นี้ไม่ใช่ standard UNIX shell แต่เป็น default shell ของ linux 
 ในปัจจุบัน จะมี default prompt เป็นเครื่องหมาย “ $ ”
 
